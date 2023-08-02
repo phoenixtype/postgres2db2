@@ -1,0 +1,16 @@
+{
+  "name": "postgresdb-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "plugin.name": "pgoutput",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "postgresuser",
+    "database.password": "password",
+    "database.dbname": "student",
+    "database.server.name": "postgres",
+    "table.include.list": "public.student",
+    "snapshot.mode": "initial",
+    "tombstones.on.delete": "true"
+  }
+}
