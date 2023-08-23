@@ -1,0 +1,15 @@
+{
+    "type" : "record",
+    "name" : "Student",
+    "namespace" : "dev.phoenixtype.psotgres2db2.model",
+    "fields" : [
+        {
+            "name" : "id",
+            "type" : "int"
+        },
+        {
+            "name" : "name",
+            "type" : "string"
+        }
+    ]
+}

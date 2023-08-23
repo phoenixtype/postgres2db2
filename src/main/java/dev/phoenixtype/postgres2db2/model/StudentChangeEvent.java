@@ -1,4 +1,4 @@
-package dev.phoenixtype.psotgres2db2.model;
+package dev.phoenixtype.postgres2db2.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;

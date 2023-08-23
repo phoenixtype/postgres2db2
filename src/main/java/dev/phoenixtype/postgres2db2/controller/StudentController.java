@@ -1,7 +1,7 @@
-package dev.phoenixtype.psotgres2db2.controller;
+package dev.phoenixtype.postgres2db2.controller;
 
-import dev.phoenixtype.psotgres2db2.model.StudentRecord;
-import dev.phoenixtype.psotgres2db2.service.StudentService;
+import dev.phoenixtype.postgres2db2.model.StudentRecord;
+import dev.phoenixtype.postgres2db2.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

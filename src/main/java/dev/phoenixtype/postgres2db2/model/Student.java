@@ -3,9 +3,8 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package dev.phoenixtype.psotgres2db2.model;
+package dev.phoenixtype.postgres2db2.model;
 
-import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -17,7 +16,7 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
   private static final long serialVersionUID = -6477104933659788536L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Student\",\"namespace\":\"dev.phoenixtype.psotgres2db2.model\",\"fields\":[{\"name\":\"id\",\"type\":\"int\"},{\"name\":\"name\",\"type\":\"string\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Student\",\"namespace\":\"dev.phoenixtype.postgres2db2.model\",\"fields\":[{\"name\":\"id\",\"type\":\"int\"},{\"name\":\"name\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -158,8 +157,8 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
    * Creates a new Student RecordBuilder.
    * @return A new Student RecordBuilder
    */
-  public static dev.phoenixtype.psotgres2db2.model.Student.Builder newBuilder() {
-    return new dev.phoenixtype.psotgres2db2.model.Student.Builder();
+  public static dev.phoenixtype.postgres2db2.model.Student.Builder newBuilder() {
+    return new dev.phoenixtype.postgres2db2.model.Student.Builder();
   }
 
   /**
@@ -167,11 +166,11 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing builder to copy.
    * @return A new Student RecordBuilder
    */
-  public static dev.phoenixtype.psotgres2db2.model.Student.Builder newBuilder(dev.phoenixtype.psotgres2db2.model.Student.Builder other) {
+  public static dev.phoenixtype.postgres2db2.model.Student.Builder newBuilder(dev.phoenixtype.postgres2db2.model.Student.Builder other) {
     if (other == null) {
-      return new dev.phoenixtype.psotgres2db2.model.Student.Builder();
+      return new dev.phoenixtype.postgres2db2.model.Student.Builder();
     } else {
-      return new dev.phoenixtype.psotgres2db2.model.Student.Builder(other);
+      return new dev.phoenixtype.postgres2db2.model.Student.Builder(other);
     }
   }
 
@@ -180,11 +179,11 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing instance to copy.
    * @return A new Student RecordBuilder
    */
-  public static dev.phoenixtype.psotgres2db2.model.Student.Builder newBuilder(dev.phoenixtype.psotgres2db2.model.Student other) {
+  public static dev.phoenixtype.postgres2db2.model.Student.Builder newBuilder(dev.phoenixtype.postgres2db2.model.Student other) {
     if (other == null) {
-      return new dev.phoenixtype.psotgres2db2.model.Student.Builder();
+      return new dev.phoenixtype.postgres2db2.model.Student.Builder();
     } else {
-      return new dev.phoenixtype.psotgres2db2.model.Student.Builder(other);
+      return new dev.phoenixtype.postgres2db2.model.Student.Builder(other);
     }
   }
 
@@ -207,7 +206,7 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(dev.phoenixtype.psotgres2db2.model.Student.Builder other) {
+    private Builder(dev.phoenixtype.postgres2db2.model.Student.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -223,7 +222,7 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Student instance
      * @param other The existing instance to copy.
      */
-    private Builder(dev.phoenixtype.psotgres2db2.model.Student other) {
+    private Builder(dev.phoenixtype.postgres2db2.model.Student other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -249,7 +248,7 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public dev.phoenixtype.psotgres2db2.model.Student.Builder setId(int value) {
+    public dev.phoenixtype.postgres2db2.model.Student.Builder setId(int value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -269,7 +268,7 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public dev.phoenixtype.psotgres2db2.model.Student.Builder clearId() {
+    public dev.phoenixtype.postgres2db2.model.Student.Builder clearId() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -288,7 +287,7 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'name'.
       * @return This builder.
       */
-    public dev.phoenixtype.psotgres2db2.model.Student.Builder setName(java.lang.CharSequence value) {
+    public dev.phoenixtype.postgres2db2.model.Student.Builder setName(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.name = value;
       fieldSetFlags()[1] = true;
@@ -308,7 +307,7 @@ public class Student extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'name' field.
       * @return This builder.
       */
-    public dev.phoenixtype.psotgres2db2.model.Student.Builder clearName() {
+    public dev.phoenixtype.postgres2db2.model.Student.Builder clearName() {
       name = null;
       fieldSetFlags()[1] = false;
       return this;

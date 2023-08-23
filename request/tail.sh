@@ -1,5 +1,5 @@
 docker run --tty \
---network postgres_debezium_cdc_default \
+--network postgres2db2_default \
 confluentinc/cp-kafkacat \
 kafkacat -b kafka:29092 -C \
 -s key=s -s value=avro \

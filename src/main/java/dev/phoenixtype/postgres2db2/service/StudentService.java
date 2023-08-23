@@ -1,7 +1,7 @@
-package dev.phoenixtype.psotgres2db2.service;
+package dev.phoenixtype.postgres2db2.service;
 
-import dev.phoenixtype.psotgres2db2.model.StudentRecord;
-import dev.phoenixtype.psotgres2db2.repository.StudentsRepository;
+import dev.phoenixtype.postgres2db2.model.StudentRecord;
+import dev.phoenixtype.postgres2db2.repository.StudentsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

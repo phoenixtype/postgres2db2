@@ -11,6 +11,6 @@
     "database.server.name": "postgres",
     "table.include.list": "public.student",
     "snapshot.mode": "initial",
-    "tombstones.on.delete": "true"
+    "tombstones.on.delete": "false"
   }
 }
